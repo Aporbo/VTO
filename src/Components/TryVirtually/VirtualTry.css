@@ -1,0 +1,168 @@
+/* VirtualTry.css */
+
+/* Overall styles for the virtual try-on page */
+.virtual-try-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    background-color: #836b6b; /* Light background */
+  }
+  
+  /* Container styles */
+  .virtual-try-container {
+    width: 100%;
+    max-width: 1000px; /* Limit max width */
+    background: rgb(240, 222, 206);
+    border-radius: 12px; /* Updated border radius */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Increased shadow for depth */
+    padding-left: 90px; /* Increased padding */
+    padding-right: 90px;
+    padding-top: 20px;
+    text-align: center; /* Center content inside the container */
+  }
+  
+  /* Title and description */
+  .virtual-try-title {
+    font-size: 28px; /* Increased font size */
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .virtual-try-description {
+    font-size: 18px; /* Increased font size */
+    margin-bottom: 20px;
+    color: #000000;
+  }
+  
+  /* Image comparison styles */
+  .image-comparison-container {
+    display: flex;
+    justify-content: center; /* Center images horizontally */
+    margin-top: 20px;
+  }
+  
+  .image-preview,
+  .image-rendered {
+    margin: 0 20px; /* Increased space between images */
+    text-align: center; /* Center text below images */
+  }
+  
+  .preview-title,
+  .rendered-title {
+    margin: 10px 0;
+    font-size: 20px; /* Increased font size */
+    color: #3b3030;
+  }
+  
+  /* Adjust the width of the preview images */
+  .preview-image,
+  .rendered-image {
+    width: 90%; /* Set to 100% of the parent container */
+    max-width: 350px; /* Limited max width of images */
+    border-radius: 12px; /* Updated border radius */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15); /* Soft shadow */
+  }
+  
+  /* Camera modal styles */
+  .camera-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.8); /* Darker semi-transparent background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; /* Ensure it appears above other content */
+  }
+  
+  .camera-content {
+    position: relative;
+    background: white;
+    border-radius: 12px; /* Updated border radius */
+    padding: 30px; /* Increased padding */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Increased shadow */
+    width: 90%; /* Responsive width */
+    max-width: 600px; /* Max width */
+  }
+  
+  /* Webcam style */
+  .webcam {
+    width: 100%; /* Make webcam fit inside modal */
+    border-radius: 12px; /* Updated border radius */
+  }
+  
+  /* Button styles */
+  .button {
+    display: inline-block;
+    padding: 12px 18px;
+    border: none;
+    border-radius: 6px; /* Updated border radius */
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+    margin: 10px 0; /* Margin around buttons */
+  }
+  
+  .add-to-cart-button {
+    background-color: #FF5722; /* Orange */
+  }
+  
+  .add-to-cart-button:hover {
+    background-color: #e64a19; /* Darker orange on hover */
+    transform: translateY(-2px); /* Slight lift effect */
+  }
+  
+  .open-camera-button {
+    background-color: #4CAF50; /* Green */
+  }
+  
+  .open-camera-button:hover {
+    background-color: #45a049; /* Darker green on hover */
+    transform: translateY(-2px); /* Slight lift effect */
+  }
+  
+  .upload-image-button {
+    background-color: #2196F3; /* Blue */
+  }
+  
+  .upload-image-button:hover {
+    background-color: #0b7dda; /* Darker blue on hover */
+    transform: translateY(-2px); /* Slight lift effect */
+  }
+  
+  /* Button section styles */
+  .button-section {
+    display: flex;
+    justify-content: space-around; /* Space buttons evenly */
+    margin-top: 20px;
+  }
+  
+  /* Modal actions */
+  .camera-actions {
+    display: flex;
+    justify-content: space-around; /* Space buttons evenly */
+    margin-top: 20px; /* Space above actions */
+  }
+  
+  /* Additional styling for buttons in camera modal */
+  .btn {
+    background-color: #FF5722; /* Default button color */
+    padding: 10px 15px; /* Padding for buttons */
+    border-radius: 6px; /* Rounded corners */
+    color: white; /* Text color */
+    font-weight: bold; /* Bold text */
+    cursor: pointer; /* Pointer cursor */
+    transition: background 0.3s ease, transform 0.2s ease; /* Transition effects */
+  }
+  
+  .btn:hover {
+    background-color: #e64a19; /* Darker button color on hover */
+    transform: translateY(-2px); /* Slight lift effect */
+  }
+  
